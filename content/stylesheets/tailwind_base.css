@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .hyphens-auto {
+        hyphens: auto;
+    }
+
+    .hyphens-manual {
+        hyphens: manual;
+    }
+
+    .hyphens-none {
+        hyphens: none;
+    }
+}
+
+/* Button garbage haha */
+.btn {
+    @apply font-bold py-2 px-4 rounded mt-1;
+}
+
+.btn-blue {
+    @apply bg-[#2c80b8] text-white;
+}
+
+.btn-blue:hover {
+    @apply md:bg-white md:text-[#2c80b8]
+}
+
+.btn-white {
+    @apply bg-white text-[#2c80b8];
+}
+
+.filterTag {
+    @apply hidden
+}
+
+.show {
+    @apply block
+}
